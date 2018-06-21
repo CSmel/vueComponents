@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>components</title>
+    <link href="css/app.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+</head>
+<body>
+<div id="vue-one">
+<h1>Vue app one</h1>
+    <greeting></greeting>
+</div>
+
+<div id="vue-two">
+<h1>Vue app two</h1>
+    <greeting></greeting>
+</div>
+
+<div id="vue-ref">
+    <h2>Refs</h2>
+    <input type="text" ref="input"/>
+    <button v-on:click="readRefs">Submit</button>
+    <p>Your fav food: {{output}}</p>
+<div ref="test">Hello</div>
+</div>
+<script src="js/app.js"></script>
+</body>
+</html>
